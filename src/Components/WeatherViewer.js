@@ -8,7 +8,7 @@ export const WeatherViewer = ({ cityData }) => {
     useEffect(() => {
         setData();
 
-        axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityData.Key}?apikey=jYdjzGIaGbw9JVkQcQk8nYfQ9lG3SRFP&metric=true`)
+        axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityData.Key}?apikey=jYdjzGIaGbw9JVkQcQk8nYfQ9lG3SRFP&metric=true`)
         .then((response)=>{
             setData(response.data);
         })
