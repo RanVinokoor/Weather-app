@@ -11,7 +11,7 @@ export const Forecast = () => {
 
   const fetchCity=(e)=>{
     e.preventDefault(e);
-    axios.get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=jYdjzGIaGbw9JVkQcQk8nYfQ9lG3SRFP&q=${citySearch}`)
+    axios.get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=MJnpdr2N5N0KGJ9feetpHIQsS4GfTwXc&q=${citySearch}`)
     .then((response) =>{
       setCityData(response.data[0])
     })
