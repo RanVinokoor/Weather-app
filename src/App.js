@@ -29,7 +29,7 @@ function App() {
           <ReactSwitch className='wipe' onChange={ToggleTheme} checked={theme === 'light'} uncheckedIcon={<Icon icon={weatherSunny} size={19}></Icon>}  checkedIcon={<Icon icon={moonO} size={19}></Icon>}/>
         </div>
           <Navbar />
-          <Routes>
+          <Routes Basename="/test_repository">
             <Route path='/' element={<Forecast />}/>
             <Route path='forecast' element={<Forecast />}/>
             <Route path='favorites' element={<Favorites />}/>
