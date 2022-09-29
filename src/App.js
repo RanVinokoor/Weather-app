@@ -30,9 +30,9 @@ function App() {
         </div>
           <Navbar />
           <Routes>
-            <Route path='Ran-Vinokoor-25-08-2022/' element={<Forecast />}/>
-            <Route path='Ran-Vinokoor-25-08-2022/forecast' element={<Forecast />}/>
-            <Route path='Ran-Vinokoor-25-08-2022/favorites' element={<Favorites />}/>
+            <Route path='Weather-app/' element={<Forecast />}/>
+            <Route path='Weather-app/forecast' element={<Forecast />}/>
+            <Route path='Weather-app/favorites' element={<Favorites />}/>
           </Routes>
         </div>
         <Particles/>
